@@ -2,22 +2,22 @@
 
 
 The code is a simple calculator program written in C that performs basic arithmetic operations based on user input. Below is a detailed analysis of the code structure, including the purpose and functionality of each part. 
-##Functionality Overview Header Files:
+## Functionality Overview Header Files:
 
 - #include <stdio.h>: Includes the standard input/output library for functions like printf and scanf.
 - #include <stdlib.h>: Includes the standard library for general utilities, though it's not used in this particular code. main Function:
 The main function is the entry point of the program.
 
-##Variable Declarations:
+## Variable Declarations:
 
 - int menu: Holds the user's choice of arithmetic operation. 
 - float num1, num2, result: Used to store the numbers entered by the user and the result of the arithmetic operation.
 
-##Displaying the Menu:
+## Displaying the Menu:
 
 printf statements display the list of arithmetic operations available.
 
-##Reading User Input:
+## Reading User Input:
 - scanf("%d", &menu): Reads the user's choice for the arithmetic operation. 
 - scanf("%f", &num1) and scanf("%f", &num2): Read the two floating-point numbers for the calculation.
 - Switch Statement:Directs the flow of the program based on the user's menu choice. Each case corresponds to a specific arithmetic operation: 
@@ -28,6 +28,7 @@ printf statements display the list of arithmetic operations available.
  5. Default Case: Handles invalid menu choices by prompting the user to enter a correct number. 
  6. Error Handling: For division, it checks if num2 is zero to avoid division by zero errors. 
 
-##Program Termination:
+## Program Termination:
 return 0; signifies the successful termination of the program. 
+
 This code covers basic calculator functionality and handles basic input validation for division by zero. Further improvements could include more robust error handling, such as validating non-numeric input and handling invalid floating-point entries.
